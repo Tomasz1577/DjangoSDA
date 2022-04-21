@@ -21,7 +21,7 @@ from books.views import get_hello
 
 urlpatterns = [
     path('', get_hello),
-    path('books/', include('books.urls')),
+    path('books/', include('books.urls')), #przekierowanie endpointów do ścieżki books\urls - sprzatanie
     # path('uuids-a', get_uuids_a),
     # path('uuids-b', get_uuids_b),
     # path('path-args/<int:x>/<str:y>/<slug:z>/', get_argument_from_path, name="get_from_path"),
