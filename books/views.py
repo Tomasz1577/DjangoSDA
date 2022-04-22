@@ -8,7 +8,8 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 def get_hello(request: WSGIRequest) -> HttpResponse:
-    return HttpResponse("<h1>Hello World</h1>")
+    hello: str = "Hello world"
+    return render(request, template_name="hello_world.html", context={"hello_var": hello})
 
 
 def get_uuids_a(request: WSGIRequest) -> HttpResponse:
