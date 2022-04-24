@@ -64,6 +64,7 @@ class CategoryCreateFormView(FormView):
 
 
 
+
 def get_hello(request: WSGIRequest) -> HttpResponse:
     hello: str = "Hello world"
     return render(request, template_name="hello_world.html", context={"hello_var": hello})
